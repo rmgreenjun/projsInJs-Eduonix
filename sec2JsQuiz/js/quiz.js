@@ -1,5 +1,5 @@
 
-function submitAnswers() {
+function submitAnswers(){
 	var total = 5;
 	var score = 0;
 	
@@ -10,5 +10,9 @@ function submitAnswers() {
 	var q4 = document.forms["quizForm"]["q4"].value;
 	var q5 = document.forms["quizForm"]["q5"].value;
 	
-	alert(q1);
+	//validation
+	if(q1 == null || q1 == ""){
+		alert("You missed question 1");
+		return false;
+	}
 }
